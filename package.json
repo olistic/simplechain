@@ -1,0 +1,20 @@
+{
+  "name": "olicoin",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "https://github.com/olistic/olicoin.git",
+  "author": "Matias Olivera <moliverafreire@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1",
+    "prettier": "^1.7.4",
+    "prettier-eslint": "^8.2.1"
+  }
+}
