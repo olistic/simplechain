@@ -1,11 +1,11 @@
 const Block = require('../lib/Block');
 
 describe('Block', () => {
-  const previousBlock = new Block(0, null, 0, 'foo');
+  const previousBlock = new Block(0, null, 0, 'foo', 0);
   let block;
 
   beforeEach(() => {
-    block = new Block(1, previousBlock.hash, 0, 'bar');
+    block = new Block(1, previousBlock.hash, 0, 'bar', 0);
   });
 
   test('has an index', () => {
@@ -24,16 +24,33 @@ describe('Block', () => {
     expect(block).toHaveProperty('data');
   });
 
+  test('has a difficulty', () => {
+    expect(block).toHaveProperty('difficulty');
+  });
+
+  test('has a nonce', () => {
+    expect(block).toHaveProperty('nonce');
+  });
+
   test('has a hash', () => {
     expect(block).toHaveProperty('hash');
   });
 
-  test('concatenates index, hash of the previous block, timestamp and data to form header', () => {
-    expect(block.getHeader()).toBe('1-a351f534347ffdaceb9d7ce104ca0650648e7fa857cb5d5d960fa2d1f2c7d3a7-0-bar');
+  test('nonce defaults to zero', () => {
+    expect(block.nonce).toBe(0);
+  });
+
+  test('allows to specify nonce', () => {
+    block = new Block(1, previousBlock.hash, 0, 'bar', 1, 42);
+    expect(block.nonce).toBe(42);
+  });
+
+  test('concatenates index, hash of the previous block, timestamp, data, difficulty and nonce to form header', () => {
+    expect(block.getHeader()).toBe('1-5aba2477446f17a1ffa3da379d0aaa0c4ef5b0666a6ccaafee4c2b345bc003d1-0-bar-0-0');
   });
 
   test('calculates SHA-256 hash of the header', () => {
-    expect(block.calculateHash()).toBe('2039ce4859adaf6055b0a0597f2ab27786be07a14d3dae8d885d368d466aede0');
+    expect(block.calculateHash()).toBe('de56bcb6ab03acf8493e2c57ccfffe7c6c29c9c57127e378cd4cb0761de44a5c');
   });
 
   test('is valid', () => {
@@ -57,6 +74,14 @@ describe('Block', () => {
   describe('with invalid hash', () => {
     test('is not valid', () => {
       block.hash = 'invalid';
+      expect(block.isValid(previousBlock)).toBe(false);
+    });
+  });
+
+  describe('with no proof of work', () => {
+    test('is not valid', () => {
+      block.difficulty = 1;
+      block.hash = block.calculateHash();
       expect(block.isValid(previousBlock)).toBe(false);
     });
   });
