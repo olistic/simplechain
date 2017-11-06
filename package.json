@@ -1,7 +1,7 @@
 {
   "name": "olicoin",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest"
   },
