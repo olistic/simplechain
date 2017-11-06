@@ -16,5 +16,8 @@
     "jest": "^21.2.1",
     "prettier": "^1.7.4",
     "prettier-eslint": "^8.2.1"
+  },
+  "dependencies": {
+    "deep-equal": "^1.0.1"
   }
 }
