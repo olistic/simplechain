@@ -45,3 +45,7 @@ Well done! But if you want to learn more, please don't forget to [look at the co
 ## Resources
 
 * [_Ever wonder how Bitcoin (and other cryptocurrencies) actually work?_](https://youtu.be/bBC-nXj3Ng4)
+
+## License
+
+MIT

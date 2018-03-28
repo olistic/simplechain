@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Learn how a simple blockchain works in this interactive demo",
   "author": "Matias Olivera <moliverafreire@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": "https://github.com/olistic/simplechain.git",
   "keywords": [
     "blockchain",
