@@ -1,8 +1,8 @@
 {
   "name": "olicoin",
   "version": "0.0.0",
-  "main": "lib/index.js",
   "scripts": {
+    "start": "node lib/cli.js",
     "test": "jest"
   },
   "repository": "https://github.com/olistic/olicoin.git",
