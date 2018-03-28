@@ -1,1 +1,1 @@
-# olicoin
+# Simplechain

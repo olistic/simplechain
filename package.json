@@ -1,13 +1,22 @@
 {
-  "name": "olicoin",
+  "name": "simplechain",
   "version": "0.0.0",
+  "description": "Learn how a simple blockchain works in this interactive demo",
+  "author": "Matias Olivera <moliverafreire@gmail.com>",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/olistic/simplechain.git",
+  "keywords": [
+    "blockchain",
+    "cryptocurrency",
+    "bitcoin",
+    "learn",
+    "simple",
+    "demo"
+  ],
   "scripts": {
     "start": "node lib/cli.js",
     "test": "jest"
   },
-  "repository": "https://github.com/olistic/olicoin.git",
-  "author": "Matias Olivera <moliverafreire@gmail.com>",
-  "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
     "eslint": "^4.19.1",
