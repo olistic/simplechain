@@ -46,11 +46,15 @@ describe('Block', () => {
   });
 
   test('concatenates index, hash of the previous block, timestamp, data, difficulty and nonce to form header', () => {
-    expect(block.getHeader()).toBe('1-5aba2477446f17a1ffa3da379d0aaa0c4ef5b0666a6ccaafee4c2b345bc003d1-0-bar-0-0');
+    expect(block.getHeader()).toBe(
+      '1-5aba2477446f17a1ffa3da379d0aaa0c4ef5b0666a6ccaafee4c2b345bc003d1-0-bar-0-0',
+    );
   });
 
   test('calculates SHA-256 hash of the header', () => {
-    expect(block.calculateHash()).toBe('de56bcb6ab03acf8493e2c57ccfffe7c6c29c9c57127e378cd4cb0761de44a5c');
+    expect(block.calculateHash()).toBe(
+      'de56bcb6ab03acf8493e2c57ccfffe7c6c29c9c57127e378cd4cb0761de44a5c',
+    );
   });
 
   test('is valid', () => {
