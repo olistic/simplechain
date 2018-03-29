@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "chalk": "^2.3.2",
-    "deep-equal": "^1.0.1"
+    "deep-equal": "^1.0.1",
+    "ora": "^2.0.0"
   }
 }
