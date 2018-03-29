@@ -1,6 +1,11 @@
 <h1 align="center">✨🔗 Simplechain 🔗✨</h1>
 
 <p align="center">
+  <a href="https://circleci.com/gh/olistic/simplechain"><img alt="CircleCI Status" src="https://img.shields.io/circleci/project/github/olistic/simplechain.svg?label=circle&maxAge=43200&style=flat-square"></a>
+  <a href="https://codeclimate.com/github/olistic/simplechain"><img alt="Coverage Status" src="https://img.shields.io/codeclimate/coverage/olistic/simplechain.svg?maxAge=43200&style=flat-square"></a>
+</p>
+
+<p align="center">
   Interactive blockchain built with Node.js.
 </p>
 
