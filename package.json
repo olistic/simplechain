@@ -28,6 +28,7 @@
     "prettier": "^1.11.1"
   },
   "dependencies": {
+    "chalk": "^2.3.2",
     "deep-equal": "^1.0.1"
   }
 }
