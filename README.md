@@ -1,4 +1,4 @@
-<h1 align="center">✨🔗 Simplechain 🔗✨</h1>
+<h1 align="center">✨⛓ Simplechain ⛓✨</h1>
 
 <p align="center">
   <a href="https://circleci.com/gh/olistic/simplechain"><img alt="CircleCI Status" src="https://img.shields.io/circleci/project/github/olistic/simplechain.svg?style=flat-square"></a>
@@ -10,12 +10,14 @@
 </p>
 
 <p align="center">
-  <img alt="demo" src="https://i.imgur.com/paQ2gpz.gif" height="500">
+  <img alt="demo" src="https://i.imgur.com/cwEbxMJ.gif" height="480">
 </p>
 
 ## Intro
 
 The blockchain is a fascinating technology, but it can also be intimidating. At the time I wrote this code, I had consumed a lot of material regarding the blockchain and cryptocurrencies, but I hadn't satisfied my hunger for knowledge (and still haven't). I wanted to create my own blockchain for some of that knowledge to sink in, and I wanted it to be simple. Simplechain is the result of that, and I hope you find it as helpful as it was for me when I created it.
+
+> Check out [Simplechain++](https://github.com/olistic/simplechainpp) for a C++ port.
 
 ## Usage
 
